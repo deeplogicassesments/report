@@ -1,0 +1,1712 @@
+import bs4
+html = """<html>
+             <div class = "classname">
+
+               <div class="homepage-wrapper">
+      <section class="homepage-module lead" data-module_name="Lead Story" data-gtm-vis-first-on-screen-11864053_516="780" data-gtm-vis-total-visible-time-11864053_516="100" data-gtm-vis-has-fired-11864053_516="1">
+          <div class="primary">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="/5929657/asia-vaccine-rollouts-lagging/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1230657876.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1230657876.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/GettyImages-1230657876.jpg?quality=85&amp;crop=0px,50px1024px,576px&amp;resize=1201,676&amp;strip=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/GettyImages-1230657876.jpg?quality=85&amp;crop=0px,54px1024px,576px&amp;resize=1602,902&amp;strip=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1230657876.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="Why Is Asia Lagging in the Vaccine Race?">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                        Himanshu Sharma/NurPhoto via Getty Images
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="eyebrow decoration-slash"><a href="/5929657/asia-vaccine-rollouts-lagging/">COVID-19</a></p>
+            
+                  <h2 class="title"><a href="/5929657/asia-vaccine-rollouts-lagging/">Why Is Asia Lagging in the Vaccine Race?</a></h2>
+            
+                      <p class="summary">Most countries across the continent have managed COVID-19 well. That may be one reason they've become laggards in the vaccine race, experts say.</p>
+            
+                  <a class="read-more" href="/5929657/asia-vaccine-rollouts-lagging/"><svg width="32" height="32" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Read more…" tabindex="-1">
+              <path d="M29 1L38.5 10.5L29 20" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+              <path d="M8.30518e-07 10.5L38 10.5" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+            </svg></a>
+                </div>
+            
+            </article>          </div>
+          <div class="secondary">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="/5930502/donald-trump-america-photographs/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/Trump_2020_Photo_Essay_Peter_Vanagtmael_16.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/Trump_2020_Photo_Essay_Peter_Vanagtmael_16.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/Trump_2020_Photo_Essay_Peter_Vanagtmael_16.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/Trump_2020_Photo_Essay_Peter_Vanagtmael_16.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2021/01/Trump_2020_Photo_Essay_Peter_Vanagtmael_16.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="A Photographer's Diary of 12 Turbulent Months in Trump's America">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                        Peter van Agtmael—Magnum Photos for TIME
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5930502/donald-trump-america-photographs/">A Photographer's Diary of 12 Turbulent Months in Trump's America</a></h2>
+            
+                      <p class="summary">Photographer Peter van Agtmael on seeing America through COVID-19, the ongoing racial reckoning and the Capitol attack</p>
+            
+                </div>
+            
+            </article>            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="/5930571/martin-luther-king-jr-fbi/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/GettyImages-517292592.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/GettyImages-517292592.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/GettyImages-517292592.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/GettyImages-517292592.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2021/01/GettyImages-517292592.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="What the FBI's Surveillance of MLK, Jr. Gave History">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                        Bettmann Archive
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5930571/martin-luther-king-jr-fbi/">What the FBI's Surveillance of MLK, Jr. Gave History</a></h2>
+            
+                      <p class="summary">The FBI relentlessly harassed the civil rights leader. Their files became an unexpected boon to historians</p>
+            
+                </div>
+            
+            </article>          </div>
+
+            <div class="trending" data-module_name="You Should Know" data-gtm-vis-recent-on-screen-11864053_518="2066" data-gtm-vis-first-on-screen-11864053_518="2066" data-gtm-vis-total-visible-time-11864053_518="100" data-gtm-vis-has-fired-11864053_518="1">
+              <div>
+                <h1 class="module-title decoration-arrow">You Should Know</h1>
+                <ul class="swipe-h">
+                    <li>
+                      <article class="slide">
+                          <div class="media">
+                            <figure>
+                              <a href="/5930592/everyone-thinks-im-a-terrorist-capitol-riot-fuels-calls-for-domestic-war-on-terror/">
+                                  <img src="https://api.time.com/wp-content/uploads/2021/01/peter-van-agtmael-capitol-riot-1.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Capitol Riot Fuels Calls for Domestic War on Terror">
+                                  <div class="penta"><span class="penta-arrow"></span></div>
+                              </a>
+                            </figure>
+                              <div class="image-credit">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <p class="no-eyebrow"></p>
+                      
+                            <h2 class="title"><a href="/5930592/everyone-thinks-im-a-terrorist-capitol-riot-fuels-calls-for-domestic-war-on-terror/">Capitol Riot Fuels Calls for Domestic War on Terror</a></h2>
+                      
+                      
+                          </div>
+                      
+                      </article>                    </li>
+                    <li>
+                      <article class="slide">
+                          <div class="media">
+                            <figure>
+                              <a href="/5930595/alexei-navalny-return-russia-why/">
+                                  <img src="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1230635305.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Why Alexei Navalny Returned to Russia">
+                                  <div class="penta"><span class="penta-arrow"></span></div>
+                              </a>
+                            </figure>
+                              <div class="image-credit">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <p class="no-eyebrow"></p>
+                      
+                            <h2 class="title"><a href="/5930595/alexei-navalny-return-russia-why/">Why Alexei Navalny Returned to Russia</a></h2>
+                      
+                      
+                          </div>
+                      
+                      </article>                    </li>
+                    <li>
+                      <article class="slide">
+                          <div class="media">
+                            <figure>
+                              <a href="/5930687/us-immigrants-citizenship/">
+                                  <img src="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1294942188.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Biden to Propose Citizenship Path for Immigrants">
+                                  <div class="penta"><span class="penta-arrow"></span></div>
+                              </a>
+                            </figure>
+                              <div class="image-credit">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <p class="no-eyebrow"></p>
+                      
+                            <h2 class="title"><a href="/5930687/us-immigrants-citizenship/">Biden to Propose Citizenship Path for Immigrants</a></h2>
+                      
+                      
+                          </div>
+                      
+                      </article>                    </li>
+                    <li>
+                      <article class="slide">
+                          <div class="media">
+                            <figure>
+                              <a href="/5930111/2-million-covid-19-deaths/">
+                                  <img src="https://api.time.com/wp-content/uploads/2021/01/COVID-2-million-deaths.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="2 Million People Have Died From COVID-19 Worldwide">
+                                  <div class="penta"><span class="penta-arrow"></span></div>
+                              </a>
+                            </figure>
+                              <div class="image-credit">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <p class="no-eyebrow"></p>
+                      
+                            <h2 class="title"><a href="/5930111/2-million-covid-19-deaths/">2 Million People Have Died From COVID-19 Worldwide</a></h2>
+                      
+                      
+                          </div>
+                      
+                      </article>                    </li>
+                    <li>
+                      <article class="slide">
+                          <div class="media">
+                            <figure>
+                              <a href="/5929398/police-officers-involved-capitol-riots-charges/">
+                                  <img src="https://api.time.com/wp-content/uploads/2021/01/police-officers-capitol-riots.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Police Forces Deal With Officers Involved in Capitol Riots">
+                                  <div class="penta"><span class="penta-arrow"></span></div>
+                              </a>
+                            </figure>
+                              <div class="image-credit">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <p class="no-eyebrow"></p>
+                      
+                            <h2 class="title"><a href="/5929398/police-officers-involved-capitol-riots-charges/">Police Forces Deal With Officers Involved in Capitol Riots</a></h2>
+                      
+                      
+                          </div>
+                      
+                      </article>                    </li>
+                </ul>
+              </div>
+            </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+          <section class="homepage-module spotlight" data-module_name="Spotlight Topic" data-gtm-vis-first-on-screen-11864053_516="19691" data-gtm-vis-total-visible-time-11864053_516="100" data-gtm-vis-has-fired-11864053_516="1">
+            <div class="heading"><h3>Coronavirus In-Depth</h3></div>
+            <div class="component mobile-carousel" id="coronavirus in-depth" data-items-count="4">
+              <span class="story-count">4 stories</span>
+              <div class="item-selectors">
+                <form>
+                  <nav>
+                      <input id="5927532-carousel-item-0" type="radio" name="item-selector-dots" value="0" checked="">
+                      <label for="5927532-carousel-item-0">Go to item 0</label>
+                      <input id="5927342-carousel-item-1" type="radio" name="item-selector-dots" value="1">
+                      <label for="5927342-carousel-item-1">Go to item 1</label>
+                      <input id="5927538-carousel-item-2" type="radio" name="item-selector-dots" value="2">
+                      <label for="5927538-carousel-item-2">Go to item 2</label>
+                      <input id="5925467-carousel-item-3" type="radio" name="item-selector-dots" value="3">
+                      <label for="5925467-carousel-item-3">Go to item 3</label>
+                  </nav>
+                </form>
+              </div>
+              <ul class="items swipe-h coronavirus in-depth">
+                  <li id="5927532-item" class="item selected show-credit show is-visible" data-index="0">
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/collection/coronavirus-vaccines-updates/">
+                              <picture>
+                                <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2015/01/health-syringe-needle-6.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                                <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2015/01/health-syringe-needle-6.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1, https://api.time.com/wp-content/uploads/2015/01/health-syringe-needle-6.jpg?quality=85&amp;w=1201&amp;h=676&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2015/01/health-syringe-needle-6.jpg?quality=85&amp;w=1602&amp;h=902&amp;crop=1 2x">
+                                <img src="https://api.time.com/wp-content/uploads/2015/01/health-syringe-needle-6.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="COVID-19 Vaccine Tracker">
+                              </picture>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                              Elizabeth Renstrom—TIME
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/collection/coronavirus-vaccines-updates/">COVID-19 Vaccine Tracker</a></h2>
+                  
+                            <p class="summary">A guide to the coronavirus vaccination rollout and what you need to know about the authorized vaccines</p>
+                  
+                      </div>
+                  
+                  </article>      </li>
+                  <li id="5927342-item" class="item show" data-index="1">
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5927342/mrna-covid-vaccine/">
+                              <picture>
+                                <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/ugur-sahin-ozlem-tureci-biontech-vaccine.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                                <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/ugur-sahin-ozlem-tureci-biontech-vaccine.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/ugur-sahin-ozlem-tureci-biontech-vaccine.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/ugur-sahin-ozlem-tureci-biontech-vaccine.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                                <img src="https://api.time.com/wp-content/uploads/2021/01/ugur-sahin-ozlem-tureci-biontech-vaccine.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="How mRNA Tech Gave Us the 1st COVID-19 Vaccines">
+                              </picture>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                              Dina Litovsky—Redux for TIME
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5927342/mrna-covid-vaccine/">How mRNA Tech Gave Us the 1st COVID-19 Vaccines</a></h2>
+                  
+                            <p class="summary">The molecule has been used to make a new type of vaccine that will change the course of the pandemic</p>
+                  
+                      </div>
+                  
+                  </article>      </li>
+                  <li id="5927538-item" class="item show" data-index="2">
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5927538/covid-19-mutations-vaccines/">
+                              <picture>
+                                <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1295025297.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                                <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1295025297.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/GettyImages-1295025297.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/GettyImages-1295025297.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                                <img src="https://api.time.com/wp-content/uploads/2021/01/GettyImages-1295025297.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="What COVID-19 Mutations Mean for Vaccines">
+                              </picture>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                              MediaNews Group via Getty Images—Copyright - 2021 Image MediaNews Group
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5927538/covid-19-mutations-vaccines/">What COVID-19 Mutations Mean for Vaccines</a></h2>
+                  
+                            <p class="summary">New variants of the COVID-19 virus raise concerns about whether they can escape vaccine protection</p>
+                  
+                      </div>
+                  
+                  </article>      </li>
+                  <li id="5925467-item" class="item show is-visible" data-index="3">
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5925467/covid-19-vaccine-hesitancy/">
+                              <picture>
+                                <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/Ala-Stanford.jpg?quality=85&amp;w=640&amp;h=567&amp;crop=1">
+                                <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/Ala-Stanford.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/Ala-Stanford.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/Ala-Stanford.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                                <img src="https://api.time.com/wp-content/uploads/2021/01/Ala-Stanford.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="Why Many Americans Mistrust COVID-19 Vaccines">
+                              </picture>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                              Emma Lee
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5925467/covid-19-vaccine-hesitancy/">Why Many Americans Mistrust COVID-19 Vaccines</a></h2>
+                  
+                            <p class="summary">Tens of millions of Americans say they will not take COVID-19 vaccines. Rumors, misinformation and racial demographics all play a role</p>
+                  
+                      </div>
+                  
+                  </article>      </li>
+              </ul>
+              <hr>
+            </div>          </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="homepage-module issue-mobile" data-module_name="Magazine Section" data-gtm-vis-first-on-screen-11864053_516="183811" data-gtm-vis-total-visible-time-11864053_516="100" data-gtm-vis-has-fired-11864053_516="1">
+          <h1 class="module-title">Inside the Issue</h1>
+              <div class="main">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5927410/trump-electoral-college-republicans/">
+                            <img src="https://api.time.com/wp-content/uploads/2021/01/Trump_Washington_DC_Riot06.jpg?quality=85&amp;w=550&amp;h=367&amp;crop=1" loading="lazy" alt="How Trump's Effort to Steal the Election Tore Apart the GOP—and the Country">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Peter van Agtmael—Magnum Photos for TIME
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="eyebrow decoration-slash"><a href="/5927410/trump-electoral-college-republicans/">Featured Story</a></p>
+                
+                      <h2 class="title"><a href="/5927410/trump-electoral-college-republicans/">How Trump's Effort to Steal the Election Tore Apart the GOP—and the Country</a></h2>
+                
+                          <p class="summary">"We will never give up, we will never concede!" President Donald Trump told the crowd of supporters he had summoned to Washington on Jan. 6. They heard him and obeyed. Within hours, a mob of</p>
+                
+                    </div>
+                
+                </article>              </div>
+          <div class="touts">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5926361/pandemic-pain-joy/">
+                            <img src="https://api.time.com/wp-content/uploads/2021/01/joy-pain-rebekah-taussig-featured.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Living in a Tangle of Joy and Pain">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5926361/pandemic-pain-joy/">Living in a Tangle of Joy and Pain</a></h2>
+                
+                
+                    </div>
+                
+                </article>                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5927132/donald-trump-mob-capitol-chaos/">
+                            <img src="https://api.time.com/wp-content/uploads/2021/01/washington-capitol-donald-trump-senate-14.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Photographs Inside the Chaos at the Capitol">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5927132/donald-trump-mob-capitol-chaos/">Photographs Inside the Chaos at the Capitol</a></h2>
+                
+                
+                    </div>
+                
+                </article>          </div>
+          <div class="magazine">
+            <div class="magazine-image">
+                <figure>
+                  <a href="https://time.com/magazine/">
+                    <img src="https://api.time.com/wp-content/uploads/2021/01/TIM210118_Capital.CoverFINAL.jpg?quality=85&amp;w=486&amp;h=646&amp;crop=1" loading="lazy" alt="Time Magazine Cover">
+                  </a>
+                </figure>
+            </div>
+            <div class="magazine-text">
+              <span class="get-stories">
+                Get TIME delivered straight to your home
+              </span>
+              <a target="_blank" href="https://time.com/subscribe-body-time/">
+                <button class="button-style white">
+                  Subscribe Now
+                </button>
+              </a>
+              <a target="_blank" href="https://timecoverstore.com/featured/vote-2020-time.html">
+                <button class="button-style">
+                  Buy The Print
+                </button>
+              </a>
+            </div>
+          </div>
+      </section>
+
+      <section class="homepage-module issue" data-module_name="Magazine Section">
+          <div class="heading"><h3>Inside the Issue</h3></div>
+          <div class="issue-container">
+                <div class="main">
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5927410/trump-electoral-college-republicans/">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/Trump_Washington_DC_Riot06.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="How Trump's Effort to Steal the Election Tore Apart the GOP—and the Country">
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                              Peter van Agtmael—Magnum Photos for TIME
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="eyebrow decoration-slash"><a href="/5927410/trump-electoral-college-republicans/">Featured Story</a></p>
+                  
+                        <h2 class="title"><a href="/5927410/trump-electoral-college-republicans/">How Trump's Effort to Steal the Election Tore Apart the GOP—and the Country</a></h2>
+                  
+                            <p class="summary">"We will never give up, we will never concede!" President Donald Trump told the crowd of supporters he had summoned to Washington on Jan. 6. They heard him and obeyed. Within hours, a mob of</p>
+                  
+                      </div>
+                  
+                  </article>                </div>
+            <div class="touts">
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5926361/pandemic-pain-joy/">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/joy-pain-rebekah-taussig-featured.jpg?quality=85&amp;crop=0px%2C921px%2C2400px%2C1350px&amp;resize=801%2C451&amp;strip" loading="lazy" alt="Living in a Tangle of Joy and Pain">
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5926361/pandemic-pain-joy/">Living in a Tangle of Joy and Pain</a></h2>
+                  
+                  
+                      </div>
+                  
+                  </article>                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5927132/donald-trump-mob-capitol-chaos/">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/washington-capitol-donald-trump-senate-14.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="Photographs Inside the Chaos at the Capitol">
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5927132/donald-trump-mob-capitol-chaos/">Photographs Inside the Chaos at the Capitol</a></h2>
+                  
+                  
+                      </div>
+                  
+                  </article>            </div>
+            <div class="magazine desktop">
+              <div class="magazine-outer">
+                <div class="border">
+                  <div class="aeroplane-wrapper">
+                    <div class="aeroplane">
+                    </div>
+                  </div>
+                  <div class="magazine-image">
+                      <a href="https://time.com/magazine/">
+                        <img src="https://api.time.com/wp-content/uploads/2021/01/TIM210118_Capital.CoverFINAL.jpg?quality=85&amp;w=486&amp;h=646&amp;crop=1" loading="lazy" alt="Time Magazine Cover">
+                      </a>
+                  </div>
+                  <span class="get-stories">
+                    Trusted stories that unite.
+                  </span>
+                  <div class="content-container">
+                    <span class="subscription-brief">
+                      Get TIME delivered straight to your home
+                    </span>
+                    <a class="magazine-outer-get-the-nl" target="_blank" href="https://time.com/subscribe-body-time/">
+                      <button class="button-style white">
+                        Subscribe Now
+                      </button>
+                    </a>
+                    <a class="magazine-outer-subscribe-now" target="_blank" href="https://timecoverstore.com/featured/vote-2020-time.html">
+                      <button class="button-style">
+                        Buy the Print
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div class="magazine-inner">
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="homepage-module latest" data-module_name="Latest Stories" data-gtm-vis-first-on-screen-11864053_516="168798" data-gtm-vis-total-visible-time-11864053_516="100" data-gtm-vis-has-fired-11864053_516="1">
+        <h1 class="module-title decoration-arrow">Latest Stories</h1>
+        <ol class="swipe-h">
+            <li>
+            <article class="slide">
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5930621/u-s-capitol-attack-iran-revolution-extremism/">What Happens When Extremism Wins</a></h2>
+            
+            
+                </div>
+            
+            </article>          </li>
+            <li>
+            <article class="slide">
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5930502/donald-trump-america-photographs/">A Photographer's Diary of 12 Turbulent Months in Trump's America</a></h2>
+            
+            
+                </div>
+            
+            </article>          </li>
+            <li>
+            <article class="slide">
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5930654/covid-19-after-countries-build-resilient/">We Need to Build More Resilient Countries </a></h2>
+            
+            
+                </div>
+            
+            </article>          </li>
+            <li>
+            <article class="slide">
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5930714/workers-trapped-china-mine/">Workers Trapped in Chinese Mine Ask for Food</a></h2>
+            
+            
+                </div>
+            
+            </article>          </li>
+            <li>
+            <article class="slide">
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="/5929657/asia-vaccine-rollouts-lagging/">Why Is Asia Lagging in the Vaccine Race?</a></h2>
+            
+            
+                </div>
+            
+            </article>          </li>
+        </ol>
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="homepage-module voices" data-module_name="Featured Voices" data-gtm-vis-first-on-screen-11864053_516="171092" data-gtm-vis-total-visible-time-11864053_516="100" data-gtm-vis-has-fired-11864053_516="1">
+        <div class="heading"><h3>Featured Voices</h3></div>
+              <section class="primary">
+                <ul>
+                <li>
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5927996/georgia-democrats-politics-south/">
+                              <img src="https://api.time.com/wp-content/uploads/2016/12/brittney-cooper-featured-voices.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1" loading="lazy" alt="Brittney Cooper">
+                              <div class="penta"><span class="penta-arrow"></span></div>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5927996/georgia-democrats-politics-south/">Brittney Cooper</a></h2>
+                  
+                            <p class="summary"><a href="/5927996/georgia-democrats-politics-south/">It's Time to Tell a New Story About the South</a></p>
+                  
+                      </div>
+                  
+                  </article>                </li>
+                <li>
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5928270/capitol-domestic-terrorism/">
+                              <img src="https://api.time.com/wp-content/uploads/2019/06/Joyce-VanceBW-copy.jpg?quality=85&amp;crop=663px%2C411px%2C2883px%2C2883px&amp;resize=640%2C640&amp;strip" loading="lazy" alt="Joyce White Vance">
+                              <div class="penta"><span class="penta-arrow"></span></div>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5928270/capitol-domestic-terrorism/">Joyce White Vance</a></h2>
+                  
+                            <p class="summary"><a href="/5928270/capitol-domestic-terrorism/">How Domestic Terrorism Can Be Prosecuted</a></p>
+                  
+                      </div>
+                  
+                  </article>                </li>
+                <li>
+                  <article class="slide">
+                      <div class="media">
+                        <figure>
+                          <a href="/5921335/joe-biden-death-penalty/">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/cori-bush-headshot.jpg?quality=85&amp;crop=0px%2C330px%2C2400px%2C2400px&amp;resize=640%2C640&amp;strip" loading="lazy" alt="Cori Bush">
+                              <div class="penta"><span class="penta-arrow"></span></div>
+                          </a>
+                        </figure>
+                          <div class="image-credit">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5921335/joe-biden-death-penalty/">Cori Bush</a></h2>
+                  
+                            <p class="summary"><a href="/5921335/joe-biden-death-penalty/">How Biden Can Help End the Death Penalty</a></p>
+                  
+                      </div>
+                  
+                  </article>                </li>
+              </ul>
+            </section>
+            <section class="secondary">
+              <h1 class="module-title decoration-arrow">More Voices</h1>
+              <ul class="swipe-h">
+                <li>
+                  <article class="slide">
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5929800/melinda-gates-womens-voices-rebuilding-covid-19/">Melinda Gates</a></h2>
+                  
+                            <p class="summary"><a href="/5929800/melinda-gates-womens-voices-rebuilding-covid-19/">Women Must Be Equal Partners Rebuilding After COVID-19</a></p>
+                  
+                      </div>
+                  
+                  </article>                </li>
+                <li>
+                  <article class="slide">
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5929257/covid-19-u-s-cases-reduce-transmission/">Gavin Yamey</a></h2>
+                  
+                            <p class="summary"><a href="/5929257/covid-19-u-s-cases-reduce-transmission/">What We Must Do to Curb COVID-19 Before Vaccines Roll Out</a></p>
+                  
+                      </div>
+                  
+                  </article>                </li>
+                <li>
+                  <article class="slide">
+                      <div class="content">
+                        <p class="no-eyebrow"></p>
+                  
+                        <h2 class="title"><a href="/5928824/hong-kong-future/">John Mak</a></h2>
+                  
+                            <p class="summary"><a href="/5928824/hong-kong-future/">The Only Path Ahead for Hong Kong Is Reform</a></p>
+                  
+                      </div>
+                  
+                  </article>                </li>
+              </ul>
+            </section>
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="homepage-module newsletter" data-module_name="Inline Newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-outer">
+              <div class="border">
+                <div class="aeroplane-wrapper"><div class="aeroplane"></div></div>
+                <span class="inside-time international-user">
+                  <span>Sign up for Inside TIME.</span> Be the first to see the new cover of TIME and get our most compelling stories delivered straight to your inbox.
+                </span>
+                <div class="input international-user">
+                    <a target="_blank" href="https://cloud.newsletters.time.com/newsletters/?newsletter_name=INSIDE_TIME&amp;source=TD_CMS_HP_CC">
+                      <button class="button-style">
+                        SIGN UP NOW
+                      </button>
+                    </a>
+                </div>
+              </div>
+              <div class="newsletter-bg">
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section class="homepage-module explore mobile" data-module_name="Explore More">
+        <div class="heading"><h3>Explore More</h3></div>
+        <div class="component image-carousel" id="" data-items-count="5">
+          <div class="item-selectors image-carousel-selectors">
+            <form>
+              <nav>
+                  <input id="-carousel-item-0" type="radio" name="item-selector-dots" value="0" checked="">
+                  <label for="-carousel-item-0">Go to item 0</label>
+                  <input id="-carousel-item-1" type="radio" name="item-selector-dots" value="1">
+                  <label for="-carousel-item-1">Go to item 1</label>
+                  <input id="-carousel-item-2" type="radio" name="item-selector-dots" value="2">
+                  <label for="-carousel-item-2">Go to item 2</label>
+                  <input id="-carousel-item-3" type="radio" name="item-selector-dots" value="3">
+                  <label for="-carousel-item-3">Go to item 3</label>
+                  <input id="-carousel-item-4" type="radio" name="item-selector-dots" value="4">
+                  <label for="-carousel-item-4">Go to item 4</label>
+              </nav>
+            </form>
+          </div>
+          <ul class="items swipe-h ">
+              <li id="-item" class="item selected transition current-slide" data-index="0">
+              <div class="explore-item">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://time.com/collection/time100-talks/">
+                            <img src="https://api.time.com/wp-content/uploads/2020/11/T100card.png?w=564&amp;h=1028&amp;crop=1" loading="lazy" alt="">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://time.com/collection/time100-talks/"></a></h2>
+                
+                
+                    </div>
+                
+                </article>      </div>
+              </li>
+              <li id="-item" class="item transition right-1" data-index="1">
+              <div class="explore-item">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://time.com/collection/live-well/">
+                            <img src="https://api.time.com/wp-content/uploads/2020/06/time-for-health-homepage-tout.jpg?quality=85&amp;w=564&amp;h=1028&amp;crop=1" loading="lazy" alt="">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://time.com/collection/live-well/"></a></h2>
+                
+                
+                    </div>
+                
+                </article>      </div>
+              </li>
+              <li id="-item" class="item transition right-2" data-index="2">
+              <div class="explore-item">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://timecoverstore.com/">
+                            <img src="https://api.time.com/wp-content/uploads/2020/04/HP-Brand-COVERS-NEW.jpg?quality=85&amp;w=564&amp;h=1028&amp;crop=1" loading="lazy" alt="">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://timecoverstore.com/"></a></h2>
+                
+                
+                    </div>
+                
+                </article>      </div>
+              </li>
+              <li id="-item" class="item transition hidden" data-index="3">
+              <div class="explore-item">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://time.com/person-of-the-year-2020-joe-biden-kamala-harris/">
+                            <img src="https://api.time.com/wp-content/uploads/2020/12/Homepage_Template.png?w=564&amp;h=1028&amp;crop=1" loading="lazy" alt="">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://time.com/person-of-the-year-2020-joe-biden-kamala-harris/"></a></h2>
+                
+                
+                    </div>
+                
+                </article>      </div>
+              </li>
+              <li id="-item" class="item transition hidden" data-index="4">
+              <div class="explore-item">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://www.timeforkids.com/family/">
+                            <img src="https://api.time.com/wp-content/uploads/2021/01/TFK_1130x2400_alt-1.png?w=564&amp;h=1028&amp;crop=1" loading="lazy" alt="">
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://www.timeforkids.com/family/"></a></h2>
+                
+                
+                    </div>
+                
+                </article>      </div>
+              </li>
+          </ul>
+        </div>      </section>
+
+      <section class="homepage-module explore desktop" data-module_name="Explore More">
+        <div class="heading"><h3>Explore More</h3></div>
+          <div class="explore-item">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="https://time.com/collection/time100-talks/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/11/T100card.png?w=282&amp;h=514&amp;crop=1, https://api.time.com/wp-content/uploads/2020/11/T100card.png?w=423&amp;h=771&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/11/T100card.png?w=564&amp;h=1028&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2020/11/T100card.png?w=282&amp;h=514&amp;crop=1" loading="lazy" alt="">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="https://time.com/collection/time100-talks/"></a></h2>
+            
+            
+                </div>
+            
+            </article>          </div>
+          <div class="explore-item">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="https://time.com/collection/live-well/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/06/time-for-health-homepage-tout.jpg?quality=85&amp;w=282&amp;h=514&amp;crop=1, https://api.time.com/wp-content/uploads/2020/06/time-for-health-homepage-tout.jpg?quality=85&amp;w=423&amp;h=771&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/06/time-for-health-homepage-tout.jpg?quality=85&amp;w=564&amp;h=1028&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2020/06/time-for-health-homepage-tout.jpg?quality=85&amp;w=282&amp;h=514&amp;crop=1" loading="lazy" alt="">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="https://time.com/collection/live-well/"></a></h2>
+            
+            
+                </div>
+            
+            </article>          </div>
+          <div class="explore-item">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="https://timecoverstore.com/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/04/HP-Brand-COVERS-NEW.jpg?quality=85&amp;w=282&amp;h=514&amp;crop=1, https://api.time.com/wp-content/uploads/2020/04/HP-Brand-COVERS-NEW.jpg?quality=85&amp;w=423&amp;h=771&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/04/HP-Brand-COVERS-NEW.jpg?quality=85&amp;w=564&amp;h=1028&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2020/04/HP-Brand-COVERS-NEW.jpg?quality=85&amp;w=282&amp;h=514&amp;crop=1" loading="lazy" alt="">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="https://timecoverstore.com/"></a></h2>
+            
+            
+                </div>
+            
+            </article>          </div>
+          <div class="explore-item">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="https://time.com/person-of-the-year-2020-joe-biden-kamala-harris/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/12/Homepage_Template.png?w=282&amp;h=514&amp;crop=1, https://api.time.com/wp-content/uploads/2020/12/Homepage_Template.png?w=423&amp;h=771&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/12/Homepage_Template.png?w=564&amp;h=1028&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2020/12/Homepage_Template.png?w=282&amp;h=514&amp;crop=1" loading="lazy" alt="">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="https://time.com/person-of-the-year-2020-joe-biden-kamala-harris/"></a></h2>
+            
+            
+                </div>
+            
+            </article>          </div>
+          <div class="explore-item">
+            <article class="slide">
+                <div class="media">
+                  <figure>
+                    <a href="https://www.timeforkids.com/family/">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="">
+                          <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/TFK_1130x2400_alt-1.png?w=282&amp;h=514&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/TFK_1130x2400_alt-1.png?w=423&amp;h=771&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/TFK_1130x2400_alt-1.png?w=564&amp;h=1028&amp;crop=1 2x">
+                          <img src="https://api.time.com/wp-content/uploads/2021/01/TFK_1130x2400_alt-1.png?w=282&amp;h=514&amp;crop=1" loading="lazy" alt="">
+                        </picture>
+                    </a>
+                  </figure>
+                    <div class="image-credit">
+                  </div>
+                </div>
+                <div class="content">
+                  <p class="no-eyebrow"></p>
+            
+                  <h2 class="title"><a href="https://www.timeforkids.com/family/"></a></h2>
+            
+            
+                </div>
+            
+            </article>          </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="homepage-module topic" data-module_name="Topic Section | 1 | Elections 2020">
+          <div class="heading"><h3>Elections 2020</h3></div>
+          <div class="component mobile-carousel" id="elections 2020" data-items-count="4">
+            <span class="story-count">4 stories</span>
+            <div class="item-selectors">
+              <form>
+                <nav>
+                    <input id="5916785-carousel-item-0" type="radio" name="item-selector-dots" value="0" checked="">
+                    <label for="5916785-carousel-item-0">Go to item 0</label>
+                    <input id="5907628-carousel-item-1" type="radio" name="item-selector-dots" value="1">
+                    <label for="5907628-carousel-item-1">Go to item 1</label>
+                    <input id="5910661-carousel-item-2" type="radio" name="item-selector-dots" value="2">
+                    <label for="5910661-carousel-item-2">Go to item 2</label>
+                    <input id="5917389-carousel-item-3" type="radio" name="item-selector-dots" value="3">
+                    <label for="5917389-carousel-item-3">Go to item 3</label>
+                </nav>
+              </form>
+            </div>
+            <ul class="items swipe-h elections 2020">
+                <li id="5916785-item" class="item selected show-credit show" data-index="0">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5916785/donald-trump-presidential-pardon-questions/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/12/GettyImages-1229807368.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/12/GettyImages-1229807368.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1, https://api.time.com/wp-content/uploads/2020/12/GettyImages-1229807368.jpg?quality=85&amp;crop=0px,50px1024px,576px&amp;resize=1201,676&amp;strip=1 1.5x, https://api.time.com/wp-content/uploads/2020/12/GettyImages-1229807368.jpg?quality=85&amp;crop=0px,54px1024px,576px&amp;resize=1602,902&amp;strip=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/12/GettyImages-1229807368.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="What Donald Trump Can — And Can't — Do with the Pardon Power">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Erin Schaff—The New York Times/Bloomberg/Getty Images
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5916785/donald-trump-presidential-pardon-questions/">What Donald Trump Can — And Can't — Do with the Pardon Power</a></h2>
+                
+                          <p class="summary">There's one presidential power Donald Trump can still use with wide discretion until Inauguration Day on January 20: the pardon power.</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5907628-item" class="item show" data-index="1">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5907628/muslim-african-ban/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/11/muslim-travel-ban-1.jpg?quality=85&amp;crop=267px%2C0px%2C1554px%2C1554px&amp;resize=640%2C640&amp;strip">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/11/muslim-travel-ban-1.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2020/11/muslim-travel-ban-1.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/11/muslim-travel-ban-1.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/11/muslim-travel-ban-1.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="Why Trump's 'Muslim Ban' Will Be Felt for Years">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Joshua Lott—AFP via Getty Images
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5907628/muslim-african-ban/">Why Trump's 'Muslim Ban' Will Be Felt for Years</a></h2>
+                
+                          <p class="summary">The Trump Administration measure has kept thousands of families from living together in the U.S.</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5910661-item" class="item show" data-index="2">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5910661/joe-biden-electoral-college/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/11/biden.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/11/biden.jpg?quality=85&amp;crop=0px%2C86px%2C1024px%2C576px&amp;resize=243%2C136&amp;strip, https://api.time.com/wp-content/uploads/2020/11/biden.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/11/biden.jpg?quality=85&amp;crop=0px%2C86px%2C1024px%2C576px&amp;resize=486%2C272&amp;strip 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/11/biden.jpg?quality=85&amp;crop=0px%2C86px%2C1024px%2C576px&amp;resize=243%2C136&amp;strip" loading="lazy" alt="Joe Biden's Electoral College Path to the Oval Office">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Tasos Katopodis—Getty Images
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5910661/joe-biden-electoral-college/">Joe Biden's Electoral College Path to the Oval Office</a></h2>
+                
+                          <p class="summary">What to know about the process by which Presidential election winners are made official</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5917389-item" class="item show" data-index="3">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5917389/joe-biden-foreign-policy/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/12/Joe-Biden-Foreign-Policy.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/12/Joe-Biden-Foreign-Policy.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2020/12/Joe-Biden-Foreign-Policy.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/12/Joe-Biden-Foreign-Policy.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/12/Joe-Biden-Foreign-Policy.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="Trump's Foreign Policy Leaves Behind Destruction for Biden">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Illustration by Eleanor Shakespeare for TIME
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5917389/joe-biden-foreign-policy/">Trump's Foreign Policy Leaves Behind Destruction for Biden</a></h2>
+                
+                          <p class="summary">The President-elect is inheriting the greatest chance to remake American foreign policy since at least 9/11</p>
+                
+                    </div>
+                
+                </article>      </li>
+            </ul>
+            <hr>
+          </div>        </section>
+        <section class="homepage-module topic" data-module_name="Topic Section | 2 | Black Lives Matter and Beyond">
+          <div class="heading"><h3>Black Lives Matter and Beyond</h3></div>
+          <div class="component mobile-carousel" id="black lives matter and beyond" data-items-count="4">
+            <span class="story-count">4 stories</span>
+            <div class="item-selectors">
+              <form>
+                <nav>
+                    <input id="5901726-carousel-item-0" type="radio" name="item-selector-dots" value="0" checked="">
+                    <label for="5901726-carousel-item-0">Go to item 0</label>
+                    <input id="5894356-carousel-item-1" type="radio" name="item-selector-dots" value="1">
+                    <label for="5894356-carousel-item-1">Go to item 1</label>
+                    <input id="5891091-carousel-item-2" type="radio" name="item-selector-dots" value="2">
+                    <label for="5891091-carousel-item-2">Go to item 2</label>
+                    <input id="5887247-carousel-item-3" type="radio" name="item-selector-dots" value="3">
+                    <label for="5887247-carousel-item-3">Go to item 3</label>
+                </nav>
+              </form>
+            </div>
+            <ul class="items swipe-h black lives matter and beyond">
+                <li id="5901726-item" class="item selected show-credit show" data-index="0">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5901726/police-training-academies/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/11/police-training-academy-gym.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/11/police-training-academy-gym.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1, https://api.time.com/wp-content/uploads/2020/11/police-training-academy-gym.jpg?quality=85&amp;w=1201&amp;h=676&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/11/police-training-academy-gym.jpg?quality=85&amp;w=1602&amp;h=902&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/11/police-training-academy-gym.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="Fixing Policing Means Updating Outmoded Training ">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Jovelle Tamayo for TIME
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5901726/police-training-academies/">Fixing Policing Means Updating Outmoded Training </a></h2>
+                
+                          <p class="summary">Independent police academies graduate thousands of officers a year, but there's no oversight of their programs and no national standard for what a good cop should—or should not—be taught</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5894356-item" class="item show" data-index="1">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5894356/protesters-injured-police/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/10/protestor-injury-police.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/10/protestor-injury-police.jpg?quality=85&amp;crop=0px%2C504px%2C1800px%2C1012px&amp;resize=243%2C136&amp;strip, https://api.time.com/wp-content/uploads/2020/10/protestor-injury-police.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/10/protestor-injury-police.jpg?quality=85&amp;crop=0px%2C504px%2C1800px%2C1012px&amp;resize=486%2C272&amp;strip 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/10/protestor-injury-police.jpg?quality=85&amp;crop=0px%2C504px%2C1800px%2C1012px&amp;resize=243%2C136&amp;strip" loading="lazy" alt="For Protesters Injured by Police, There's No Real Recovery">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Andres Gonzalez for TIME
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5894356/protesters-injured-police/">For Protesters Injured by Police, There's No Real Recovery</a></h2>
+                
+                          <p class="summary">Police offices have shot, beaten, and even used cars to run down Black Lives Matter protesters, leaving some with permanent disabilities</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5891091-item" class="item show" data-index="2">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5891091/grand-rapids-violence-crowdsourcing-money/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/10/Grand-Rapids-04.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/10/Grand-Rapids-04.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2020/10/Grand-Rapids-04.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/10/Grand-Rapids-04.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/10/Grand-Rapids-04.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="Why Grand Rapids Is Crowdsourcing Money to Address Violence">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Cory Morse—Grand Rapids Press/AP
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5891091/grand-rapids-violence-crowdsourcing-money/">Why Grand Rapids Is Crowdsourcing Money to Address Violence</a></h2>
+                
+                          <p class="summary">Grand Rapids, Mich., isn't a big city. But according to life-long resident JD Chapman Jr., it has a lot of "big-city problems" nonetheless. "We have all kinds of problems with our education, our health care</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5887247-item" class="item show" data-index="3">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5887247/reparations-america-rosewood-massacre/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/09/rahim-fortune-rosewood-reparations-5.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/09/rahim-fortune-rosewood-reparations-5.jpg?quality=85&amp;crop=0px%2C7px%2C2400px%2C1350px&amp;resize=243%2C136&amp;strip, https://api.time.com/wp-content/uploads/2020/09/rahim-fortune-rosewood-reparations-5.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/09/rahim-fortune-rosewood-reparations-5.jpg?quality=85&amp;crop=0px%2C7px%2C2400px%2C1350px&amp;resize=486%2C272&amp;strip 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/09/rahim-fortune-rosewood-reparations-5.jpg?quality=85&amp;crop=0px%2C7px%2C2400px%2C1350px&amp;resize=243%2C136&amp;strip" loading="lazy" alt="What Reparations for Black Americans Could Look Like">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Rahim Fortune for TIME
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5887247/reparations-america-rosewood-massacre/">What Reparations for Black Americans Could Look Like</a></h2>
+                
+                          <p class="summary">Rosewood Massacre survivors and descendants were awarded millions decades later. Could this be a model for reparations?</p>
+                
+                    </div>
+                
+                </article>      </li>
+            </ul>
+            <hr>
+          </div>        </section>
+        <section class="homepage-module topic" data-module_name="Topic Section | 3 | Personal Finance by NextAdvisor">
+          <div class="heading"><h3>Personal Finance by NextAdvisor</h3></div>
+          <div class="component mobile-carousel" id="personal finance by nextadvisor" data-items-count="4">
+            <span class="story-count">4 stories</span>
+            <div class="item-selectors">
+              <form>
+                <nav>
+                    <input id="5929365-carousel-item-0" type="radio" name="item-selector-dots" value="0" checked="">
+                    <label for="5929365-carousel-item-0">Go to item 0</label>
+                    <input id="5929367-carousel-item-1" type="radio" name="item-selector-dots" value="1">
+                    <label for="5929367-carousel-item-1">Go to item 1</label>
+                    <input id="5929369-carousel-item-2" type="radio" name="item-selector-dots" value="2">
+                    <label for="5929369-carousel-item-2">Go to item 2</label>
+                    <input id="5929371-carousel-item-3" type="radio" name="item-selector-dots" value="3">
+                    <label for="5929371-carousel-item-3">Go to item 3</label>
+                </nav>
+              </form>
+            </div>
+            <ul class="items swipe-h personal finance by nextadvisor">
+                <li id="5929365-item" class="item selected show-credit show" data-index="0">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://bit.ly/3nAT6A4">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-pay-back-unemployment-benefits.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-pay-back-unemployment-benefits.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/na-pay-back-unemployment-benefits.jpg?quality=85&amp;crop=0px,48px1000px,563px&amp;resize=1201,676&amp;strip=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/na-pay-back-unemployment-benefits.jpg?quality=85&amp;crop=0px,48px1000px,563px&amp;resize=1602,902&amp;strip=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/na-pay-back-unemployment-benefits.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="Millions Could Have to Pay Back Unemployment Benefits If They Miss This Deadline">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            NextAdvisor/Getty Images
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://bit.ly/3nAT6A4">Millions Could Have to Pay Back Unemployment Benefits If They Miss This Deadline</a></h2>
+                
+                          <p class="summary">A new rule requires millions of gig and freelance workers to submit extra documentation — or risk having to pay back their benefits</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5929367-item" class="item show" data-index="1">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://bit.ly/3bCdw9G">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-best-credit-cards.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-best-credit-cards.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/na-best-credit-cards.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/na-best-credit-cards.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/na-best-credit-cards.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="The Best Credit Cards of 2021">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://bit.ly/3bCdw9G">The Best Credit Cards of 2021</a></h2>
+                
+                          <p class="summary">Choosing a credit card is a big financial decision. Here’s how to find the right card for your needs.
+                </p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5929369-item" class="item show" data-index="2">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://bit.ly/35DMWJd">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-2021-student-loan-debt-2-346x188-1.jpg?quality=85&amp;w=346&amp;h=188&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-2021-student-loan-debt-2-346x188-1.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/na-2021-student-loan-debt-2-346x188-1.jpg?quality=85&amp;w=346&amp;h=188&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/na-2021-student-loan-debt-2-346x188-1.jpg?quality=85&amp;w=346&amp;h=188&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/na-2021-student-loan-debt-2-346x188-1.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="Think Twice Before Paying Off Your Federal Student Loans in 2021">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://bit.ly/35DMWJd">Think Twice Before Paying Off Your Federal Student Loans in 2021</a></h2>
+                
+                          <p class="summary">This isn’t very traditional advice, but don’t worry too much about paying down federal loans this year. Here are some other moves that might make more sense</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5929371-item" class="item show" data-index="3">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="https://bit.ly/3snbrV2">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-bankrate-survey.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2021/01/na-bankrate-survey.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2021/01/na-bankrate-survey.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2021/01/na-bankrate-survey.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2021/01/na-bankrate-survey.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="The Average American Has Been With the Same Bank for 14 Years. Now Is a Good Time to Shop Around">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="https://bit.ly/3snbrV2">The Average American Has Been With the Same Bank for 14 Years. Now Is a Good Time to Shop Around</a></h2>
+                
+                          <p class="summary">Sticking with the same bank is convenient, but can be costly. Here’s how you can save by making a change</p>
+                
+                    </div>
+                
+                </article>      </li>
+            </ul>
+            <hr>
+          </div>        </section>
+        <section class="homepage-module topic" data-module_name="Topic Section | 4 | TIME Health">
+          <div class="heading"><h3>TIME Health</h3></div>
+          <div class="component mobile-carousel" id="time health" data-items-count="4">
+            <span class="story-count">4 stories</span>
+            <div class="item-selectors">
+              <form>
+                <nav>
+                    <input id="5903992-carousel-item-0" type="radio" name="item-selector-dots" value="0" checked="">
+                    <label for="5903992-carousel-item-0">Go to item 0</label>
+                    <input id="5918335-carousel-item-1" type="radio" name="item-selector-dots" value="1">
+                    <label for="5918335-carousel-item-1">Go to item 1</label>
+                    <input id="5917061-carousel-item-2" type="radio" name="item-selector-dots" value="2">
+                    <label for="5917061-carousel-item-2">Go to item 2</label>
+                    <input id="5914062-carousel-item-3" type="radio" name="item-selector-dots" value="3">
+                    <label for="5914062-carousel-item-3">Go to item 3</label>
+                </nav>
+              </form>
+            </div>
+            <ul class="items swipe-h time health">
+                <li id="5903992-item" class="item selected show-credit show" data-index="0">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5903992/indoor-socializing-coronavirus/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/10/indoor-socializing.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/10/indoor-socializing.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1, https://api.time.com/wp-content/uploads/2020/10/indoor-socializing.jpg?quality=85&amp;w=1201&amp;h=676&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/10/indoor-socializing.jpg?quality=85&amp;w=1602&amp;h=902&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/10/indoor-socializing.jpg?quality=85&amp;w=801&amp;h=451&amp;crop=1" loading="lazy" alt="Can You Socialize Safely Indoors This Winter Amid COVID?">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Getty Images
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5903992/indoor-socializing-coronavirus/">Can You Socialize Safely Indoors This Winter Amid COVID?</a></h2>
+                
+                          <p class="summary">COVID-19 spreads especially easily in indoor environments. As the weather gets colder, is there any safe way to socialize inside?</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5918335-item" class="item show" data-index="1">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5918335/a-post-pandemic-bucket-list-and-what-to-do-in-the-meantime/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/12/INJY-12-6-20-Lead-Image.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/12/INJY-12-6-20-Lead-Image.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2020/12/INJY-12-6-20-Lead-Image.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/12/INJY-12-6-20-Lead-Image.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/12/INJY-12-6-20-Lead-Image.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="A Post-Pandemic Bucket List (and What To Do In the Meantime)">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5918335/a-post-pandemic-bucket-list-and-what-to-do-in-the-meantime/">A Post-Pandemic Bucket List (and What To Do In the Meantime)</a></h2>
+                
+                          <p class="summary">What we want most when this is all over</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5917061-item" class="item show" data-index="2">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5917061/covid-19-flu-season/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/12/GettyImages-922548094.jpg?quality=85&amp;crop=833px%2C0px%2C2848px%2C2848px&amp;resize=640%2C640&amp;strip">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/12/GettyImages-922548094.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1, https://api.time.com/wp-content/uploads/2020/12/GettyImages-922548094.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/12/GettyImages-922548094.jpg?quality=85&amp;w=486&amp;h=272&amp;crop=1 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/12/GettyImages-922548094.jpg?quality=85&amp;w=243&amp;h=136&amp;crop=1" loading="lazy" alt="What You Need to Know About COVID-19 and Flu">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Getty Images
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5917061/covid-19-flu-season/">What You Need to Know About COVID-19 and Flu</a></h2>
+                
+                          <p class="summary">Health experts say we could have a scary winter ahead as two respiratory infections, flu and COVID-19, collide</p>
+                
+                    </div>
+                
+                </article>      </li>
+                <li id="5914062-item" class="item show" data-index="3">
+                <article class="slide">
+                    <div class="media">
+                      <figure>
+                        <a href="/5914062/medical-schools-coronavirus-pandemic/">
+                            <picture>
+                              <source media="(max-width: 767px)" srcset="https://api.time.com/wp-content/uploads/2020/11/eva-oleary-geisinger-medical-school.jpg?quality=85&amp;w=640&amp;h=640&amp;crop=1">
+                              <source media="(min-width: 768px)" srcset="https://api.time.com/wp-content/uploads/2020/11/eva-oleary-geisinger-medical-school.jpg?quality=85&amp;crop=0px%2C209px%2C2400px%2C1350px&amp;resize=243%2C136&amp;strip, https://api.time.com/wp-content/uploads/2020/11/eva-oleary-geisinger-medical-school.jpg?quality=85&amp;w=364&amp;h=204&amp;crop=1 1.5x, https://api.time.com/wp-content/uploads/2020/11/eva-oleary-geisinger-medical-school.jpg?quality=85&amp;crop=0px%2C209px%2C2400px%2C1350px&amp;resize=486%2C272&amp;strip 2x">
+                              <img src="https://api.time.com/wp-content/uploads/2020/11/eva-oleary-geisinger-medical-school.jpg?quality=85&amp;crop=0px%2C209px%2C2400px%2C1350px&amp;resize=243%2C136&amp;strip" loading="lazy" alt="How U.S. Medical Schools Are Training Post-Pandemic Doctors">
+                            </picture>
+                        </a>
+                      </figure>
+                        <div class="image-credit">
+                            Photo-illustration by Eva O'Leary for TIME
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="no-eyebrow"></p>
+                
+                      <h2 class="title"><a href="/5914062/medical-schools-coronavirus-pandemic/">How U.S. Medical Schools Are Training Post-Pandemic Doctors</a></h2>
+                
+                          <p class="summary">In February 2019, the Kaiser Permanente health system announced a new kind of medical school. The school would be built “from the ground up” to prepare students for the complexities of the U.S. medical system.</p>
+                
+                    </div>
+                
+                </article>      </li>
+            </ul>
+            <hr>
+          </div>        </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="homepage-module coronavirus-widget-module" data-module_name="Coronavirus Widget" data-gtm-vis-first-on-screen-11864053_516="19058" data-gtm-vis-total-visible-time-11864053_516="100" data-gtm-vis-has-fired-11864053_516="1">
+        <h3 class="heading">Coronavirus Snapshot</h3>
+        <div class="component coronavirus-widget">
+          <img class="loading-circle hide" src="/img/loading-circle.gif">
+        <div class="coronavirus-widget-data">
+  <table class="table us">
+    <tbody><tr class="table-head">
+      <th class="bold">U.S. ▸</th>
+      <th class="regular">Total</th>
+      <th class="regular">14-day Trend</th>
+    </tr>
+        <tr class="table-row">
+          <th>Cases</th>
+          <th class="numbers">24,074,658</th>
+          <th class="numbers arrow_green">-17.4%
+            <svg class="deltaArrow" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <marker id="arrow_red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: rgb(209, 35, 42)"></path>
+              </marker>
+              <marker id="arrow_green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: rgb(126, 173, 156)"></path>
+              </marker>
+              <marker id="arrow_gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: #808080"></path>
+              </marker>
+              </defs>
+              <path d="M 2,3.3000000000000007 C 3.3000000000000007,3.3000000000000007 20.7,3.3000000000000007 22,20.7 " style="stroke: rgb(126, 173, 156); fill: none; stroke-width: 1" marker-end="url(#arrow_green)">
+              </path>
+            </svg>
+          </th>
+        </tr>
+        <tr class="table-row">
+          <th>Deaths</th>
+          <th class="numbers">398,981</th>
+          <th class="numbers arrow_green">-7.5%
+            <svg class="deltaArrow" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <marker id="arrow_red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: rgb(209, 35, 42)"></path>
+              </marker>
+              <marker id="arrow_green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: rgb(126, 173, 156)"></path>
+              </marker>
+              <marker id="arrow_gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: #808080"></path>
+              </marker>
+              </defs>
+              <path d="M 2,8.25 C 8.25,8.25 15.75,8.25 22,15.75 " style="stroke: rgb(126, 173, 156); fill: none; stroke-width: 1" marker-end="url(#arrow_green)">
+              </path>
+            </svg>
+          </th>
+        </tr>
+  </tbody></table>
+  <div class="maps">
+    <div class="map-item">
+      <div class="map">
+        <a href="https://time.com/5800901/coronavirus-map/">
+          <div class="component lazy-image rendered image-loaded" data-high-density="" data-src="https://assets.time.com/interactives/dashboard_covid/screenshots/dashboard_map_us.png" data-crop="" data-alt="" data-title="" data-shop-image="false">
+          
+          <noscript>
+            <div class="inner-container">
+              <img src="https://assets.time.com/interactives/dashboard_covid/screenshots/dashboard_map_us.png" alt="" title="">
+            </div>
+          </noscript>
+          
+          <div class="inner-container js-inner-container "><img src="https://assets.time.com/interactives/dashboard_covid/screenshots/dashboard_map_us.png?quality=85" alt="" title="">
+          </div>
+          
+          
+          </div>
+        </a>
+      </div>
+      <h3>U.S. Hotspots</h3>
+      <div class="coronavirus-penta">
+        <span class="penta-arrow"></span>
+      </div>
+    </div>
+    <div class="map-item">
+      <div class="map">
+        <a href="https://time.com/5800901/coronavirus-map/">
+          <div class="component lazy-image rendered image-loaded" data-high-density="" data-src="https://assets.time.com/interactives/dashboard_covid/screenshots/dashboard_map_world.png" data-crop="" data-alt="" data-title="" data-shop-image="false">
+          
+          <noscript>
+            <div class="inner-container">
+              <img src="https://assets.time.com/interactives/dashboard_covid/screenshots/dashboard_map_world.png" alt="" title="">
+            </div>
+          </noscript>
+          
+          <div class="inner-container js-inner-container "><img src="https://assets.time.com/interactives/dashboard_covid/screenshots/dashboard_map_world.png?quality=85" alt="" title="">
+          </div>
+          
+          
+          </div>
+        </a>
+      </div>
+      <h3>Global Hotspots</h3>
+      <div class="coronavirus-penta">
+        <span class="penta-arrow"></span>
+      </div>
+    </div>
+  </div>
+  <table class="table global">
+    <tbody><tr class="table-head">
+      <th class="bold">Global ▸</th>
+      <th class="regular">Total</th>
+      <th class="regular">14-day Trend</th>
+    </tr>
+        <tr class="table-row">
+          <th>Cases</th>
+          <th class="numbers">95,555,533</th>
+          <th class="numbers arrow_green">-7.4%
+            <svg class="deltaArrow" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <marker id="arrow_red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: rgb(209, 35, 42)"></path>
+              </marker>
+              <marker id="arrow_green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill:rgb(126, 173, 156)"></path>
+              </marker>
+              <marker id="arrow_gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: #808080"></path>
+              </marker>
+              </defs>
+              <path d="M 2,8.3 C 8.3,8.3 15.7,8.3 22,15.7 " style="stroke:rgb(126, 173, 156); fill: none; stroke-width: 1" marker-end="url(#arrow_green)">
+              </path>
+            </svg>
+          </th>
+        </tr>
+        <tr class="table-row">
+          <th>Deaths</th>
+          <th class="numbers">2,040,085</th>
+          <th class="numbers arrow_red">+0.2%
+            <svg class="deltaArrow" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <marker id="arrow_red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: rgb(209, 35, 42)"></path>
+              </marker>
+              <marker id="arrow_green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill:rgb(209, 35, 42)"></path>
+              </marker>
+              <marker id="arrow_gray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 0 L 10 5 L 0 10 z" style="fill: #808080"></path>
+              </marker>
+              </defs>
+              <path d="M 2,12.1 C 11.9,12.1 12.1,12.1 22,11.9 " style="stroke:rgb(209, 35, 42); fill: none; stroke-width: 1" marker-end="url(#arrow_red)">
+              </path>
+            </svg>
+          </th>
+        </tr>
+  </tbody></table>
+</div>
+</div>      </section>
+
+
+
+
+
+
+
+
+</div>
+
+             </div>
+           </html>"""
+parsed_html = bs4.BeautifulSoup(html, "html.parsed")
+
+text_found = parsed_html.find("div",attrs={"class":"classname"}).text 
+
+print(text_found)
